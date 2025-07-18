@@ -1,0 +1,28 @@
+.footer {
+  background-color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      border-top: 1px solid rgb(207, 205, 205);
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    font-size: 15px;
+    color: rgb(39, 39, 39);
+
+
+    div {
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #4169e1; // royal blue on hover
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.loan-table-container {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+.loan-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+
+th {
+    padding: 15px 20px 25px 20px; 
+    text-align: left;
+    font-size: 15px;    
+}
+
+   td {
+    padding: 20px;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .approveBtn, .rejectBtn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.approveBtn {
+  background-color: #22c55e; // green
+  color: white;
+
+  &:hover {
+    background-color: #16a34a;
+  }
+}
+
+.rejectBtn {
+  background-color: #ef4444; // red
+  color: white;
+
+  &:hover {
+    background-color: #dc2626;
+  }
+}
+
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  .apply-btn {
+    background-color: #4169e1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #314cb7;
+    }
+
+  }
+}

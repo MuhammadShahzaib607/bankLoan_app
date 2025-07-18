@@ -1,0 +1,68 @@
+// Theme Colors
+$black: #000000;
+$white: #ffffff;
+$gray: #f4f4f4;
+$royal-blue: #4169e1;
+
+.about {
+  background-color: $white;
+  color: $black;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: $royal-blue;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    text-align: justify;
+  }
+
+  .info-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .box {
+      background-color: $gray;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        color: $royal-blue;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+// Responsive (optional)
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 1rem;
+
+    .info-boxes {
+      gap: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}

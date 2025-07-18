@@ -1,0 +1,114 @@
+.dashboard {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+
+  .mainContent {
+    padding: 40px 80px;
+
+    h2 {
+      font-size: 24px;
+      color: #1f2937;
+      margin-bottom: 20px;
+    }
+
+    .userInfo {
+      margin-bottom: 30px;
+
+      p {
+        font-size: 16px;
+        color: #4b5563;
+      }
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      margin-bottom: 40px;
+
+ span {
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            width: 100%;
+            margin: 20px 20px 0px 20px;
+        }
+
+      p {
+        padding: 50px 70px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: #ffffff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+      }
+
+      .totalLoans {
+        background-color: #2563eb; // Blue
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .paidLoans {
+        background-color: #16a34a; // Green
+                display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .remainingLoans {
+        background-color: #dc2626; // Red
+                display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    .description {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+
+      h2 {
+        font-size: 20px;
+        color: #1d4ed8;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 15px;
+        color: #374151;
+        line-height: 1.6;
+
+        strong {
+          color: #111827;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .mainContent {
+      padding: 20px;
+
+      .box {
+        flex-direction: column;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

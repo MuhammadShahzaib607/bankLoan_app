@@ -1,0 +1,103 @@
+// Theme Colors
+$white: #ffffff;
+$black: #000000;
+$royal-blue: #4169e1;
+$gray-light: #f5f5f5;
+$gray-dark: #555555;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: $white;
+  border-bottom: 1px solid $gray-light;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  .websiteName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $royal-blue;
+  }
+
+  .navLinks {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+
+    li {
+      font-weight: 500;
+      color: $gray-dark;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      font-size: 15px;
+
+      &:hover {
+        color: $royal-blue;
+      }
+    }
+  }
+
+  .searchInput {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    input {
+      padding: 0.5rem 1rem;
+      border: 1px solid $gray-light;
+      border-radius: 4px;
+      outline: none;
+      color: $black;
+
+      &::placeholder {
+        color: $gray-dark;
+      }
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      background-color: $royal-blue;
+      color: $white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($royal-blue, 10%);
+      }
+    }
+
+ &.dummyNavbar {
+    .skeleton-box {
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      animation: shimmer 1.5s infinite;
+    }
+
+    .websiteName {
+      width: 120px;
+      height: 24px;
+    }
+
+    .navLinks li {
+      width: 70px;
+      height: 16px;
+    }
+
+    .searchInput input {
+      width: 120px;
+      height: 28px;
+      background-color: #ddd;
+    }
+
+    .searchInput button {
+      width: 60px;
+      height: 28px;
+      background-color: #ccc;
+    }
+  }
+
+  }
+}
